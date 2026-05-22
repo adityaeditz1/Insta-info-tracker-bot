@@ -20,11 +20,10 @@ ADMIN_ID = 1721427995
 # Force Subscribe Configuration
 FORCE_CHANNEL_USERNAME = "@aditya_labs"
 FORCE_CHANNEL_ID = -1003644491983
-APIFY_TOKEN = "apify_api_CwA9rgrlRJPlipheKCHhwTVVh3YfiS3cHMra"
+APIFY_TOKEN = os.getenv("APIFY_TOKEN")
 VERIFY_URL = "https://tj4arqo.short.gy/ig-verify"
 VERIFY_DURATION = 24 * 60 * 60
-DATABASE_URL = "postgresql://postgres.epluuuabtkbknekreeqv:SMARTCHHOTU2006@aws-1-ap-south-1.pooler.supabase.com:5432/postgres?sslmode=require"
-db_pool = None
+DATABASE_URL = os.getenv("DATABASE_URL")
 BOT_ID = 7
 
 conn = sqlite3.connect("verified_users.db", check_same_thread=False)
@@ -480,7 +479,7 @@ def register_core_panel(app):
 
 # ================= CONFIG =================
 
-BOT_TOKEN = "8359246645:AAHlKc083uA-mzp0B8pRysQ2F9AO3jSTZiM"
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 # ================= TEXT MESSAGES =================
 
